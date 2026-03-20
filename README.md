@@ -1,6 +1,6 @@
 # Global-Warming-Turbulence-Analysis-Python
 
-# Relationship Between Global Warming and Atmospheric Turbulence
+## Relationship Between Global Warming and Atmospheric Turbulence
 
 ## Project Overview
 
@@ -36,8 +36,6 @@ Three datasets are used:
 ---
 
 ## Project Structure
-
-
 global-warming-turbulence/
 │
 ├── Relationship Between Global Warming and Air Turbulence.py # Main Python script
@@ -47,26 +45,19 @@ global-warming-turbulence/
 │ └── global_warming_turbulence_data.csv
 ├── README.md
 
-
 ---
 
 ## Installation and Requirements
 
 This project uses Python 3.x and requires the following libraries:
+- bash: pip install pandas numpy matplotlib scipy scikit-learn
 
-bash: pip install pandas numpy matplotlib scipy scikit-learn
+## How to Run
+- Make sure all CSV files are in the 'datasets/' folder.
+- Update file paths in the script if necessary.
+- Run the Python script: python "Relationship Between Global Warming and Air Turbulence.py"
 
-# How to Run
-
-Make sure all CSV files are in the 'datasets/' folder.
-
-Update file paths in the script if necessary.
-
-Run the Python script:
-
-python "Relationship Between Global Warming and Air Turbulence.py"
-
-# Code Workflow
+## Code Workflow
 
 1. Import Libraries
 import pandas as pd
@@ -154,7 +145,7 @@ plt.title("Actual vs Predicted Turbulence")
 plt.show()
 11. Trend Relationship Plots
 
-# Temperature vs Turbulence
+## Temperature vs Turbulence
 plt.figure()
 plt.scatter(df['temp_anomaly'], df['turbulence_index'])
 m, b = np.polyfit(df['temp_anomaly'], df['turbulence_index'], 1)
@@ -164,7 +155,7 @@ plt.ylabel("Turbulence")
 plt.title("Temp. vs Turbulence")
 plt.show()
 
-# CO2 vs Turbulence
+## CO2 vs Turbulence
 plt.figure()
 plt.scatter(df['co2'], df['turbulence_index'])
 m, b = np.polyfit(df['co2'], df['turbulence_index'], 1)
@@ -174,13 +165,13 @@ plt.ylabel("Turbulence")
 plt.title("CO2 vs Turbulence")
 plt.show()
 
-# Key Findings
+## Key Findings
 
-## Strong positive correlations:
+### Strong positive correlations:
 Temperature vs Turbulence: r= ~0.77
 CO2 vs Turbulence: r= ~0.78
 
-## Regression results:
+### Regression Results:
 Temperature has a larger effect on turbulence than CO2
 CO2 contributes indirectly via global warming
 Statistical significance: p < 0.001 for all relationships
@@ -189,8 +180,7 @@ Interpretation:
 Rising greenhouse gases increase global temperatures which strongly influence atmospheric turbulence. This supports the hypothesis that global warming
 contributes to increased atmospheric instability.
 
-# Notes and Recommendations
-
+## Notes and Recommendations
 - NaN values in early historical years are expected due to incomplete records.
 - Only complete rows are used for analysis.
 - Analysis shows association, not causation.
