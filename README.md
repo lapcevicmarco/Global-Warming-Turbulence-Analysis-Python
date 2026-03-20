@@ -20,8 +20,8 @@ The analysis includes:
 Three datasets are used:
 
 1. **CO2 Emissions** ('CO2_Emission.csv')  
-   - Contains annual CO2 emissions per country.  
-   - Key columns: 'country', 'year', 'co2'  
+- Contains annual CO2 emissions per country.  
+- Key columns: 'country', 'year', 'co2'  
 
 2. **Global Surface Temperature Anomalies** ('Global_Surface_Temperature_Anomolies.csv')  
    - Contains monthly and annual temperature anomalies.  
