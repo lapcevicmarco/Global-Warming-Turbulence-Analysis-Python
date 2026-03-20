@@ -24,14 +24,14 @@ Three datasets are used:
 - Key columns: 'country', 'year', 'co2'  
 
 2. **Global Surface Temperature Anomalies** ('Global_Surface_Temperature_Anomolies.csv')  
-   - Contains monthly and annual temperature anomalies.  
-   - Key column: 'J-D' (renamed to 'temp_anomaly')  
+- Contains monthly and annual temperature anomalies.  
+- Key column: 'J-D' (renamed to 'temp_anomaly')  
 
 3. **Global Atmospheric Turbulence Data** ('global_warming_turbulence_data.csv')  
-   - Contains yearly turbulence metrics.  
-   - Key column: 'reported_turbulence_events' (renamed to 'turbulence_index')  
+- Contains yearly turbulence metrics.  
+- Key column: 'reported_turbulence_events' (renamed to 'turbulence_index')  
 
-**Note:** All CSV files should be in the 'datasets/' folder.
+**Note:** All CSV files should be in the 'datasets' folder.
 
 ---
 
