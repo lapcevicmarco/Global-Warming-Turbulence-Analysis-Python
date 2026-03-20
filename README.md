@@ -70,9 +70,9 @@ from sklearn.linear_model import LinearRegression
 
 ### 2. Load Data
 ```
-co2 = pd.read_csv('datasets/CO2_Emission.csv')
-temp = pd.read_csv('datasets/Global_Surface_Temperature_Anomolies.csv')
-turb = pd.read_csv('datasets/global_warming_turbulence_data.csv')
+co2 = pd.read_csv('CO2_Emission.csv')
+temp = pd.read_csv('Global_Surface_Temperature_Anomolies.csv')
+turb = pd.read_csv('global_warming_turbulence_data.csv')
 ```
 
 ### 3. Clean and Standardize Columns
