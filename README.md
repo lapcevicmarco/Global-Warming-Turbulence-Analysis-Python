@@ -56,9 +56,10 @@ This project uses Python 3.x and requires the following libraries:
 
 ```bash
 pip install pandas numpy matplotlib scipy scikit-learn
-How to Run
 
-Make sure all CSV files are in the datasets/ folder.
+# How to Run
+
+Make sure all CSV files are in the 'datasets/' folder.
 
 Update file paths in the script if necessary.
 
@@ -66,7 +67,7 @@ Run the Python script:
 
 python "Relationship Between Global Warming and Air Turbulence.py"
 
-Code Workflow
+# Code Workflow
 
 1. Import Libraries
 import pandas as pd
