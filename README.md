@@ -49,7 +49,7 @@ global-warming-turbulence/
 
 ## Installation and Requirements
 
-This project uses Python 3.x and requires the following libraries:
+This project uses Python 3.13.2 and requires the following libraries:
 - bash: pip install pandas numpy matplotlib scipy scikit-learn
 
 ## How to Run
@@ -69,6 +69,9 @@ from sklearn.linear_model import LinearRegression
 ```
 
 ### 2. Load Data
+
+**NOTE:** Change your working directory to a file path that points to where you stored the datasets in the terminal window of whatever software environment you are running (VSCode, PyCharm, etc). 
+
 ```
 co2 = pd.read_csv('CO2_Emission.csv')
 temp = pd.read_csv('Global_Surface_Temperature_Anomolies.csv')
