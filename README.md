@@ -197,9 +197,9 @@ Temperature vs Turbulence: r= ~0.77
 CO2 vs Turbulence: r= ~0.78
 
 ### Regression Results:
-Temperature has a larger effect on turbulence than CO2
-CO2 contributes indirectly via global warming
-Statistical significance: p < 0.001 for all relationships
+- Temperature has a larger effect on turbulence than CO2
+- CO2 contributes indirectly via global warming
+- Statistical significance: p < 0.001 for all relationships
 
 Interpretation:
 Rising greenhouse gases increase global temperatures which strongly influence atmospheric turbulence. This supports the hypothesis that global warming
