@@ -54,8 +54,7 @@ global-warming-turbulence/
 
 This project uses Python 3.x and requires the following libraries:
 
-```bash
-pip install pandas numpy matplotlib scipy scikit-learn
+bash: pip install pandas numpy matplotlib scipy scikit-learn
 
 # How to Run
 
