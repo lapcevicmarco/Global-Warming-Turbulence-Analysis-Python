@@ -49,13 +49,21 @@ global-warming-turbulence/
 
 ## Installation and Requirements
 
-This project uses Python 3.13.2 and requires the following libraries:
-- bash: pip install pandas numpy matplotlib scipy scikit-learn
+This project uses Python 3.13.2 (most updated version) and requires the following libraries:
+- bash:
+
+```
+pip install pandas numpy matplotlib scipy scikit-learn
+```
 
 ## How to Run
-- Make sure all CSV files are in the 'datasets/' folder.
+- Make sure all CSV files are in the 'datasets' folder.
 - Update file paths in the script if necessary.
-- Run the Python script: python "Relationship Between Global Warming and Air Turbulence.py"
+- Run the Python script:
+
+```
+python "Relationship Between Global Warming and Air Turbulence.py"
+```
 
 ## Code Workflow
 
@@ -196,8 +204,8 @@ plt.show()
 ## Key Findings
 
 ### Strong positive correlations:
-Temperature vs Turbulence: r= ~0.77
-CO2 vs Turbulence: r= ~0.78
+- Temperature vs Turbulence: r = ~0.77
+- CO2 vs Turbulence: r = ~0.78
 
 ### Regression Results:
 - Temperature has a larger effect on turbulence than CO2
