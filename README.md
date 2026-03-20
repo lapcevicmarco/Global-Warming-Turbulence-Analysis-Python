@@ -50,7 +50,7 @@ global-warming-turbulence/
 
 ---
 
-## Installation & Requirements
+## Installation and Requirements
 
 This project uses Python 3.x and requires the following libraries:
 
