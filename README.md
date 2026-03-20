@@ -57,15 +57,16 @@ This project uses Python 3.x and requires the following libraries:
 - Update file paths in the script if necessary.
 - Run the Python script: python "Relationship Between Global Warming and Air Turbulence.py"
 
-```
 ## Code Workflow
 
 ###1. Import Libraries
+```
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import pearsonr
 from sklearn.linear_model import LinearRegression
+```
 
 ###2. Load Data
 co2 = pd.read_csv('datasets/CO2_Emission.csv')
