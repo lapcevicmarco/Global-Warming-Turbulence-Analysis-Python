@@ -38,16 +38,19 @@ Three datasets are used:
 ## Project Structure
 global-warming-turbulence/
 
-│
+|
 
-├── Relationship Between Global Warming and Air Turbulence.py # Main Python script
+|--Relationship Between Global Warming and Air Turbulence.py # Main Python script
 
-├── datasets/
+|--datasets/
 
-│ ├── CO2_Emission.csv
-│ ├── Global_Surface_Temperature_Anomolies.csv
-│ └── global_warming_turbulence_data.csv
-├── README.md
+||-- CO2_Emission.csv
+
+| |-- Global_Surface_Temperature_Anomolies.csv
+
+| |-- global_warming_turbulence_data.csv
+
+|--README.md
 
 ---
 
