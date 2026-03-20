@@ -57,21 +57,22 @@ This project uses Python 3.x and requires the following libraries:
 - Update file paths in the script if necessary.
 - Run the Python script: python "Relationship Between Global Warming and Air Turbulence.py"
 
+```
 ## Code Workflow
 
-1. Import Libraries
+###1. Import Libraries
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import pearsonr
 from sklearn.linear_model import LinearRegression
 
-2. Load Data
+###2. Load Data
 co2 = pd.read_csv('datasets/CO2_Emission.csv')
 temp = pd.read_csv('datasets/Global_Surface_Temperature_Anomolies.csv')
 turb = pd.read_csv('datasets/global_warming_turbulence_data.csv')
 
-3. Clean & Standardize Columns
+###3. Clean & Standardize Columns
 co2.columns = co2.columns.str.lower().str.strip()
 temp.columns = temp.columns.str.lower().str.strip()
 turb.columns = turb.columns.str.lower().str.strip()
@@ -79,17 +80,17 @@ turb.columns = turb.columns.str.lower().str.strip()
 temp = temp.rename(columns={'j-d': 'temp_anomaly'})
 turb = turb.rename(columns={'reported_turbulence_events': 'turbulence_index'})
 
-4. Aggregate CO2 Data
+###4. Aggregate CO2 Data
 co2_global = co2.groupby('year')['co2'].mean().reset_index()
 
-5. Merge Datasets
+###5. Merge Datasets
 df = co2_global.merge(temp[['year', 'temp_anomaly']], on='year') \
                .merge(turb[['year', 'turbulence_index']], on='year')
                
-6. Handle Missing Values
+###6. Handle Missing Values
 df = df.dropna()
 
-7. Exploratory Analysis
+###7. Exploratory Analysis
 plt.figure()
 plt.plot(df['year'], df['co2'])
 plt.title("CO2 Over Time")
@@ -111,7 +112,7 @@ plt.xlabel("Year")
 plt.ylabel("Turbulence Index")
 plt.show()
 
-8. Correlation Analysis
+###8. Correlation Analysis
 corr_matrix = df[['co2', 'temp_anomaly', 'turbulence_index']].corr()
 print("\nCorrelation Matrix:\n", corr_matrix)
 
@@ -121,7 +122,7 @@ corr_co2_turb, p_val2 = pearsonr(df['co2'], df['turbulence_index'])
 print(f"\nTemp. vs Turbulence: r={corr_temp_turb:.3f}, p={p_val1:.5f}")
 print(f"CO2 vs Turbulence: r={corr_co2_turb:.3f}, p={p_val2:.5f}")
 
-9. Regression Analysis
+###9. Regression Analysis
 X = df[['co2', 'temp_anomaly']]
 y = df['turbulence_index']
 
@@ -133,7 +134,7 @@ print(f"CO2 Coefficient: {model.coef_[0]}")
 print(f"Temperature Coefficient: {model.coef_[1]}")
 print(f"Intercept: {model.intercept_}")
 
-10. Predictions vs Actual
+###10. Predictions vs Actual
 y_pred = model.predict(X)
 
 plt.figure()
@@ -144,6 +145,7 @@ plt.ylabel("Predicted Turbulence")
 plt.title("Actual vs Predicted Turbulence")
 plt.show()
 11. Trend Relationship Plots
+```
 
 ## Temperature vs Turbulence
 plt.figure()
@@ -186,7 +188,7 @@ contributes to increased atmospheric instability.
 - Analysis shows association, not causation.
 - Trendlines in scatterplots visually support regression findings.
 
-# Author
+## Author
 Marco A. Lapcevic
 
 ---
